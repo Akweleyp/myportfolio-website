@@ -20,7 +20,7 @@
         class="text-white flex flex-row justify-between h-18 items-center px-4 gap-4 w-full"
       >
         <div
-          class="md:text-5xl text-2xl border-1 border-white-600 animate-bounce"
+          class="md:text-5xl md:text-2xl border-1 border-white-600 animate-bounce"
         >
           <a href="" class="logo"> PN </a>
         </div>
@@ -28,36 +28,21 @@
           <ul
             class="nav-list flex flex-row justify-between gap-[50px] overflow-x-auto"
           >
-            <a href="">
-              <li>Home</li>
-            </a>
-            <a href="">
-              <li>Dropdown</li>
-            </a>
-            <a href="#about">
-              <li>About</li>
-            </a>
-            <a href="#my-portfolio">
-              <li>Portfolio</li>
-            </a>
-            <a href="#my-services">
-              <li>Services</li>
-            </a>
-            <a href="#my-resume">
-              <li>Resume</li>
-            </a>
-            <a href="#my-projects">
-              <li>Projects</li>
-            </a>
-            <a href="#contact">
-              <li>Contact</li>
-            </a>
+            <a href=""> <li class="block">Home</li> </a>
+            <a href="#my-portfolio"> <li class="block">Portfolio</li> </a>
+            <a href="#my-services"> <li class="block">Services</li> </a>
+            <a href=""> <li class="hidden md:block">Dropdown</li> </a>
+            <a href="#about"> <li class="hidden md:block">About</li> </a>
+
+            <a href="#my-resume"> <li class="hidden md:block">Resume</li> </a>
+
+            <a href="#contact"> <li class="hidden md:block">Contact</li> </a>
           </ul>
         </div>
       </nav>
       <div class="header-text">
         <div
-          class="intro text-white px-50 py-50 text-2xl md:text-3xl flex flex-col items-center justify-center gap-[5px] animate-pulse px-4 text-center"
+          class="intro text-white px-50 py-50 sm:text-2xl sm:text-2xl md:text-2xl md:text-3xl flex flex-col items-center justify-center gap-[5px] animate-pulse px-4 text-center"
         >
           <h1>I'm Patricia Akweley Narh</h1>
           <h1>A Junior Backend Developer,</h1>
@@ -66,20 +51,20 @@
       </div>
     </header>
 
-    <section
-      class="mybio h-full m-8 testr pt-14 items-center justify-center w-full flex p-20 mt-14 pt-14"
+    <!-- <section
+      class="mybio h-full sm:flex sm:flex-col m-8 items-center justify-center w-full flex p-20 mt-14 "
       id="about"
     >
       <div
-        class="bio w-full flex items-center gap-[20px] px-4 md:px-8 py-50 testr"
+        class="bio w-full flex items-center gap-[20px] px-4 md:px-8 py-50 "
       >
-        <div class="w-300 flex items-center m-4">
+        <div class=" w-300 hidden md:block flex items-center m-4">
           <img src="./images/new-profile.jpg" alt="" class="profile" />
         </div>
-        <div class="summary flex-col gap-[30px] items-center justify-center">
+        <div class="summary sm:flex-col-1 flex-col  gap-[30px] items-center justify-center">
           <div class="flex flex-col gap-[50px]">
             <h1
-              class="text-4xl flex flex-col ml-8 mr-4 font-heading mb-4 font-bold tracking-tight"
+              class="md:text-4xl flex flex-col ml-8 mr-4 font-heading mb-4 font-bold tracking-tight"
             >
               My Bio
             </h1>
@@ -105,26 +90,26 @@
             </div>
           </div>
 
-          <div class="flex flex-col gap-1 ml-8 mr-4">
-            <div class="design">
-              <p>Design</p>
-              <progress value="50" max="100" class="h-1">50%</progress>
+          <div class="flex flex-col sm:flex-col-1 gap-1 ml-8 mr-4">
+            <div class="node">
+              <p>Node.js</p>
+              <progress value="60" max="100" class="h-1">60%</progress>
             </div>
             <div class="html5">
               <p>HTML5</p>
-              <progress value="30" max="100" class="h-1">30%</progress>
+              <progress value="70" max="100" class="h-1">70%</progress>
             </div>
             <div class="css3">
               <p>CSS3</p>
-              <progress value="50" max="100" class="h-1">50%</progress>
+              <progress value="80" max="100" class="h-1">80%</progress>
             </div>
-            <div class="wordPress">
-              <p>WordPress</p>
-              <progress value="10" max="100" class="h-1">10%</progress>
+            <div class="javascript">
+              <p>Javascript</p>
+              <progress value="70" max="100" class="h-1">70%</progress>
             </div>
-            <div class="bootStrap">
-              <p>Bootstrap</p>
-              <progress value="10" max="100" class="h-1">10%</progress>
+            <div class="Express.js">
+              <p>Express.js</p>
+              <progress value="70" max="100" class="h-1">70%</progress>
             </div>
           </div>
 
@@ -134,10 +119,88 @@
                 ><button class="but1 p-2 bg-blue-900">Hire Me</button></a
               >
 
-              <a target="_blank" href="./images/Patricia Akweley Narh - Curriculum Vitae New docx.pdf"
-                ><button class="but2 p-2 bg-blue-400" >Download CV</button></a
+              <a
+                target="_blank"
+                href="./images/Patricia Akweley Narh - Curriculum Vitae New docx.pdf"
+                ><button class="but2 p-2 bg-blue-400">Download CV</button></a
               >
             </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section
+      id="about"
+      class="mybio min-h-screen flex flex-col items-center justify-center px-6 sm:px-10 md:px-16 lg:px-24 py-10"
+    >
+      <div class="bio w-full flex flex-col md:flex-row items-center gap-10">
+        <!-- Profile Image (Visible on Medium+ Screens) -->
+        <div class="hidden md:flex md:w-1/3 lg:w-1/4 justify-center">
+          <img
+            src="./images/new-profile.jpg"
+            alt="Profile Picture"
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+
+        <!-- Bio Content -->
+        <div
+          class="summary flex flex-col gap-6 text-center md:text-left md:w-2/3 lg:w-3/4"
+        >
+          <h1 class="text-3xl md:text-4xl font-bold tracking-tight">My Bio</h1>
+
+          <p class="text-sm md:text-base lg:text-lg">
+            Patricia Akweley Narh, a KNUST biochemistry graduate, is passionate
+            about continuous learning and exploring diverse fields. She's
+            particularly interested in web development, aiming to stay ahead of
+            emerging trends.
+          </p>
+
+          <p class="text-sm md:text-base lg:text-lg">
+            Patricia seeks to integrate her biochemistry background with backend
+            development and entrepreneurship. She aspires to become a
+            resourceful professional, contributing to innovative solutions and
+            impactful ventures.
+          </p>
+
+          <!-- Skills Progress -->
+          <div class="flex flex-col gap-3 w-full">
+            <div>
+              <p>Node.js</p>
+              <progress value="60" max="100" class="w-full h-1">60%</progress>
+            </div>
+            <div>
+              <p>HTML5</p>
+              <progress value="70" max="100" class="w-full h-1">70%</progress>
+            </div>
+            <div>
+              <p>CSS3</p>
+              <progress value="80" max="100" class="w-full h-1">80%</progress>
+            </div>
+            <div>
+              <p>JavaScript</p>
+              <progress value="70" max="100" class="w-full h-1">70%</progress>
+            </div>
+            <div>
+              <p>Express.js</p>
+              <progress value="70" max="100" class="w-full h-1">70%</progress>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 mt-4">
+            <a
+              href="#"
+              class="but1 bg-blue-900 text-white py-2 px-6 rounded-md text-center"
+              >Hire Me</a
+            >
+            <a target="_blank"
+              href="./images/Curriculum Vitae - Patricia Akweley Narh.docx.pdf"
+              
+              class="but2 bg-blue-400 text-white py-2 px-6 rounded-md text-center"
+              >Download CV</a
+            >
           </div>
         </div>
       </div>
@@ -157,13 +220,13 @@
         </div>
         <div>
           <ul class="nav-list flex flex-row gap-[50px]">
-            <a href="#all">
+            <a class="hidden md:block" href="#all">
               <li id="all-pics">All</li>
             </a>
             <a href="#packaging ">
               <li id="packaging">Packaging</li>
             </a>
-            <a href="#biochemist">
+            <a class="hidden md:block" href="#biochemist">
               <li id="biochemist">Biochemist</li>
             </a>
             <a href="#shearlac">
@@ -214,15 +277,15 @@
       </div>
     </section>
 
-    <section>
-      <div class="services-info h-screen flex flex-col pt-4" id="my-services">
+    <!-- <section>
+      <div class="services-info h-screen flex sm:flex-col flex-col pt-4" id="my-services">
         <div class="text-4xl flex justify-center items-center p-4">
           <h1 class="font-heading font-bold tracking-tight">Services</h1>
         </div>
 
-        <div class="flex flex-row pt-8 gap-[10px] ml-14 mr-14 p-20">
+        <div class="sm:grid-cols-1 flex flex-row pt-8 gap-[10px] ml-14 mr-14 p-20">
           <div
-            class="development flex flex-col justify-center items-center gap-[20px] p-8"
+            class="development md:block flex flex-col justify-center items-center gap-[20px] p-8"
           >
             <div class="w-20 flex justify-center items-center">
               <img src="./images/development.png" alt="" />
@@ -230,16 +293,15 @@
             <div>
               <p>Development</p>
             </div>
-            <div flex flex-col justify-center items-center>
+            <div  class=" text-7xl  lg:flex-col justify-center items-center text-2xl md:text-2xl " >
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+                As a Junior Backend Developer, I specialize in building APIs, integrating databases, and optimizing server-side performance to create scalable and efficient web solutions. 
               </p>
             </div>
           </div>
 
           <div
-            class="design flex flex-col justify-center items-center gap-[20px] p-8"
+            class="design hidden md:block flex flex-col justify-center items-center gap-[20px] p-8"
           >
             <div class="w-20">
               <img src="./images/product-design.png" alt="" />
@@ -249,13 +311,12 @@
             </div>
             <div class="flex-col justify-center items-center">
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+                I offer creative design services using Canva and Adobe Photoshop, specializing in eye-catching graphics, branding materials, and visually appealing content for businesses and individuals. 
               </p>
             </div>
           </div>
           <div
-            class="e-commerce flex flex-col justify-center items-center gap-[20px] p-8"
+            class="e-commerce hidden md:block flex flex-col justify-center items-center gap-[20px] p-8"
           >
             <div class="w-20"><img src="./images/ecommerce.png" alt="" /></div>
             <div>
@@ -263,16 +324,186 @@
             </div>
             <div>
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+               As the Co-founder & CEO of Shearla Cosmetics, I specialize in e-commerce solutions, offering seamless online shopping experiences, brand development, and digital marketing strategies to drive sales and customer engagement.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section>
+      <div
+        class="services-info min-h-screen flex flex-col pt-4 px-6 sm:px-10 md:px-16 lg:px-24"
+        id="my-services"
+      >
+        <!-- Section Heading -->
+        <div class="text-4xl flex justify-center items-center p-4">
+          <h1 class="font-heading font-bold tracking-tight">Services</h1>
+        </div>
+
+        <!-- Services Container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-8">
+          <!-- Development -->
+          <div
+            class="development flex flex-col justify-center items-center gap-6 p-8 text-center bg-gray-100 rounded-lg shadow-md"
+          >
+            <div class="w-20">
+              <img src="./images/development.png" alt="Development" />
+            </div>
+            <p class="text-lg font-semibold">Development</p>
+            <p class="text-sm md:text-base lg:text-lg">
+              As a Junior Backend Developer, I specialize in building APIs,
+              integrating databases, and optimizing server-side performance to
+              create scalable and efficient web solutions.
+            </p>
+          </div>
+
+          <!-- Design -->
+          <div
+            class="design flex flex-col justify-center items-center gap-6 p-8 text-center bg-gray-100 rounded-lg shadow-md"
+          >
+            <div class="w-20">
+              <img src="./images/product-design.png" alt="Design" />
+            </div>
+            <p class="text-lg font-semibold">Design</p>
+            <p class="text-sm md:text-base lg:text-lg">
+              I offer creative design services using Canva and Adobe Photoshop,
+              specializing in eye-catching graphics, branding materials, and
+              visually appealing content for businesses and individuals.
+            </p>
+          </div>
+
+          <!-- E-Commerce -->
+          <div
+            class="e-commerce flex flex-col justify-center items-center gap-6 p-8 text-center bg-gray-100 rounded-lg shadow-md"
+          >
+            <div class="w-20">
+              <img src="./images/ecommerce.png" alt="E-Commerce" />
+            </div>
+            <p class="text-lg font-semibold">E-Commerce</p>
+            <p class="text-sm md:text-base lg:text-lg">
+              As the Co-founder & CEO of Shearla Cosmetics, I specialize in
+              e-commerce solutions, offering seamless online shopping
+              experiences, brand development, and digital marketing strategies
+              to drive sales and customer engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="my-resume"
+      class="min-h-screen flex flex-col items-center px-6 sm:px-10 md:px-16 lg:px-24 py-10"
+    >
+      <!-- Resume Heading -->
+      <div class="text-4xl flex justify-center mb-6">
+        <h1 class="font-heading font-bold tracking-tight">Resume</h1>
+      </div>
+
+      <!-- Resume Content -->
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <!-- Profile Image -->
+        <div class="resume-image md:w-1/3 flex justify-center">
+          <img
+            src="./images/newpose.jpg"
+            alt="Profile Picture"
+            class="rounded-lg shadow-lg w-full max-w-xs md:max-w-sm"
+          />
+        </div>
+
+        <!-- Work Experience & Education -->
+        <div class="all-dev md:w-2/3 flex flex-col gap-8">
+          <!-- Work Experience -->
+          <div class="work-experience">
+            <h2 class="text-2xl font-bold tracking-tight mb-4">
+              Work Experience
+            </h2>
+
+            <!-- Experience Item -->
+            <div
+              class="flex flex-col md:flex-row items-start justify-between gap-4 p-4 bg-gray-100 rounded-lg shadow-md"
+            >
+              <div>
+                <h3 class="text-lg font-semibold">Junior Backend Developer</h3>
+                <p class="text-sm">MEST-Ghana | Osu, Ghana</p>
+              </div>
+
+              <div class="text-sm flex items-center gap-2">
+                <i class="fa fa-calendar"></i>
+                <p>February 2025 - Present</p>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row items-start justify-between gap-4 p-4 bg-gray-100 rounded-lg shadow-md"
+            >
+              <div>
+                <h3 class="text-lg font-semibold">Research Assistant</h3>
+                <p class="text-sm">WACCBIP | Legon, Ghana</p>
+              </div>
+
+              <div class="text-sm flex items-center gap-2">
+                <i class="fa fa-calendar"></i>
+                <p>November 2023 - September 2024</p>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row items-start justify-between gap-4 p-4 bg-gray-100 rounded-lg shadow-md"
+            >
+              <div>
+                <h3 class="text-lg font-semibold">Research Assistant Intern</h3>
+                <p class="text-sm">NMIMR | Legon, Ghana</p>
+              </div>
+
+              <div class="text-sm flex items-center gap-2">
+                <i class="fa fa-calendar"></i>
+                <p>November 2022 - December 2022</p>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row items-start justify-between gap-4 p-4 bg-gray-100 rounded-lg shadow-md"
+            >
+              <div>
+                <h3 class="text-lg font-semibold">Intern</h3>
+                <p class="text-sm">Amalitech | Takoradi, Ghana</p>
+              </div>
+
+              <div class="text-sm flex items-center gap-2">
+                <i class="fa fa-calendar"></i>
+                <p>November 2023 - September 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="education">
+            <h2 class="text-2xl font-bold tracking-tight mb-4">Education</h2>
+
+            <div
+              class="flex flex-col md:flex-row items-start justify-between gap-4 p-4 bg-gray-100 rounded-lg shadow-md"
+            >
+              <div>
+                <h3 class="text-lg font-semibold">BSc. Biochemistry</h3>
+                <p class="text-sm">
+                  Kwame Nkrumah University of Science and Technology | Kumasi,
+                  Ghana
+                </p>
+              </div>
+              <div class="text-sm flex items-center gap-2">
+                <i class="fa fa-calendar"></i>
+                <p>September 2019 - September 2023</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="h-screen">
+    <!-- <section class="h-screen pt-8">
       <div>
         <div class="resume flex justify-center text-4xl mb-2" id="my-resume">
           <h1 class="font-heading mb-4 font-bold tracking-tight">Resume</h1>
@@ -478,7 +709,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section>
       <div
@@ -508,7 +739,7 @@
             <h2 class="sm:text-4xl text-xl">Shearla Website</h2>
             <img
               class="sm:w-[8rem] md:block hidden group-hover:animate-pulse"
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHx3ZWJzaXRlfGVufDB8MHx8fDE3MzYxNDgzNTJ8MA&ixlib=rb-4.0.3&q=80&w=1080"
+              src="./images/shearla.png"
               alt="Project-1"
             />
             <!-- Button -->
@@ -517,7 +748,8 @@
                 class="text-xl text-green-600 dark:text-green-400 sm:block hidden"
                 name="arrow-up-outline"
               ></ion-icon>
-              <a target="_blank"
+              <a
+                target="_blank"
                 href="https://akweleyp.github.io/shearla-website/"
                 class="font-semibold sm:text-xl sm:block hidden"
                 >View More</a
@@ -536,7 +768,7 @@
             <h2 class="sm:text-4xl text-xl">Landing Page</h2>
             <img
               class="sm:w-[8rem] md:block hidden group-hover:animate-pulse"
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxwcm9qZWN0fGVufDB8MHx8fDE3MzYxNDgzNjd8MA&ixlib=rb-4.0.3&q=80&w=1080"
+              src="./images/landingpage.png"
               alt="Project-2"
             />
             <!-- Button -->
@@ -545,7 +777,8 @@
                 class="text-xl text-green-600 dark:text-green-400 sm:block hidden"
                 name="arrow-up-outline"
               ></ion-icon>
-              <a target="_blank"
+              <a
+                target="_blank"
                 href="https://akweleyp.github.io/landingpage/"
                 class="font-semibold sm:text-xl sm:block hidden"
                 >View More</a
@@ -561,11 +794,10 @@
             class="w-full px-2 text-black group hover:bg-gray-400/20 rounded flex justify-between items-center pb-4 border-b border-gray-300 dark:border-gray-500 cursor-pointer"
           >
             <p class="sm:text-5xl text-xl font-bold">03.</p>
-            <h2 class="sm:text-4xl text-xl">hotel-page</h2>
+            <h2 class="sm:text-4xl text-xl">Hotel Page</h2>
             <img
               class="sm:w-[8rem] md:block hidden group-hover:animate-pulse"
-              src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHx3ZWJzaXRlfGVufDB8MHx8fDE3MzYxNDgzNTJ8MA&ixlib=rb-4.0.3&q=80&w=1080"
-              alt="Project-3"
+              src="./images/hotelp.png"
             />
             <!-- Button -->
             <div class="flex items-center gap-1">
@@ -573,8 +805,153 @@
                 class="text-xl text-green-600 dark:text-green-400 sm:block hidden"
                 name="arrow-up-outline"
               ></ion-icon>
-              <a target="_blank"
+              <a
+                target="_blank"
                 href="https://akweleyp.github.io/hotel-page/"
+                class="font-semibold sm:text-xl sm:block hidden"
+                >View More</a
+              >
+              <ion-icon
+                class="text-3xl text-gray-400 group-hover:text-green-400 sm:hidden block"
+                name="eye-outline"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div
+            class="w-full px-2 text-black group hover:bg-gray-400/20 rounded flex justify-between items-center cursor-pointer pb-4 border-b border-gray-300 dark:border-gray-500"
+          >
+            <p class="sm:text-5xl text-xl font-bold">04.</p>
+            <h2 class="sm:text-4xl text-xl">Note taking API</h2>
+            <img
+              class="sm:w-[8rem] md:block hidden group-hover:animate-pulse"
+              src="./images/note-api.jpg"
+              alt="Project-4"
+            />
+            <!-- Button -->
+            <div class="flex items-center gap-1">
+              <ion-icon
+                class="text-xl text-green-600 dark:text-green-400 sm:block hidden"
+                name="arrow-up-outline"
+              ></ion-icon>
+              <a
+                target="_blank"
+                href="https://akweleyp.github.io/note-api/"
+                class="font-semibold sm:text-xl sm:block hidden"
+                >View More</a
+              >
+              <ion-icon
+                class="text-3xl text-gray-400 group-hover:text-green-400 sm:hidden block"
+                name="eye-outline"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div
+            class="w-full px-2 text-black group hover:bg-gray-400/20 rounded flex justify-between items-center cursor-pointer pb-4 border-b border-gray-300 dark:border-gray-500"
+          >
+            <p class="sm:text-5xl text-xl font-bold">05.</p>
+            <h2 class="sm:text-4xl text-xl">Expense API</h2>
+            <img
+              class="sm:w-[8rem] md:block hidden group-hover:animate-pulse"
+              src="./images/ex-api.jpg"
+              alt="Project-4"
+            />
+            <!-- Button -->
+            <div class="flex items-center gap-1">
+              <ion-icon
+                class="text-xl text-green-600 dark:text-green-400 sm:block hidden"
+                name="arrow-up-outline"
+              ></ion-icon>
+              <a
+                target="_blank"
+                href="https://akweleyp.github.io/expense-api/"
+                class="font-semibold sm:text-xl sm:block hidden"
+                >View More</a
+              >
+              <ion-icon
+                class="text-3xl text-gray-400 group-hover:text-green-400 sm:hidden block"
+                name="eye-outline"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div
+            class="w-full px-2 text-black group hover:bg-gray-400/20 rounded flex justify-between items-center cursor-pointer pb-4 border-b border-gray-300 dark:border-gray-500"
+          >
+            <p class="sm:text-5xl text-xl font-bold">06.</p>
+            <h2 class="sm:text-4xl text-xl">E-commerce API</h2>
+            <img
+              class="sm:w-[8rem] md:block hidden group-hover:animate-pulse"
+              src="./images/ec-api.jpg"
+              alt="Project-4"
+            />
+            <!-- Button -->
+            <div class="flex items-center gap-1">
+              <ion-icon
+                class="text-xl text-green-600 dark:text-green-400 sm:block hidden"
+                name="arrow-up-outline"
+              ></ion-icon>
+              <a
+                target="_blank"
+                href="https://akweleyp.github.io/e-commerce-api/"
+                class="font-semibold sm:text-xl sm:block hidden"
+                >View More</a
+              >
+              <ion-icon
+                class="text-3xl text-gray-400 group-hover:text-green-400 sm:hidden block"
+                name="eye-outline"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div
+            class="w-full px-2 text-black group hover:bg-gray-400/20 rounded flex justify-between items-center cursor-pointer pb-4 border-b border-gray-300 dark:border-gray-500"
+          >
+            <p class="sm:text-5xl text-xl font-bold">07.</p>
+            <h2 class="sm:text-4xl text-xl">Advertising API</h2>
+            <img
+              class="sm:w-[8rem] md:block hidden group-hover:animate-pulse"
+              src="./images/advert-api.jpg"
+            />
+            <!-- Button -->
+            <div class="flex items-center gap-1">
+              <ion-icon
+                class="text-xl text-green-600 dark:text-green-400 sm:block hidden"
+                name="arrow-up-outline"
+              ></ion-icon>
+              <a
+                target="_blank"
+                href="https://github.com/jepp-x/advertising-api.git"
+                class="font-semibold sm:text-xl sm:block hidden"
+                >View More</a
+              >
+              <ion-icon
+                class="text-3xl text-gray-400 group-hover:text-green-400 sm:hidden block"
+                name="eye-outline"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div
+            class="w-full px-2 text-black group hover:bg-gray-400/20 rounded flex justify-between items-center cursor-pointer pb-4 border-b border-gray-300 dark:border-gray-500"
+          >
+            <p class="sm:text-5xl text-xl font-bold">07.</p>
+            <h2 class="sm:text-4xl text-xl">Library API</h2>
+            <img
+              class="sm:w-[8rem] md:block hidden group-hover:animate-pulse"
+              src="./images/libm-api.jpg"
+              alt="Project-4"
+            />
+            <!-- Button -->
+            <div class="flex items-center gap-1">
+              <ion-icon
+                class="text-xl text-green-600 dark:text-green-400 sm:block hidden"
+                name="arrow-up-outline"
+              ></ion-icon>
+              <a
+                target="_blank"
+                href="https://github.com/jepp-x/library-api.git"
                 class="font-semibold sm:text-xl sm:block hidden"
                 >View More</a
               >
@@ -597,105 +974,91 @@
       ></script>
     </section>
 
+    
     <section>
       <div class="client-sec pt-4 bg-gray-100">
-        <div class="client-h text-4xl flex justify-center pt-2">
+        <!-- Title Section -->
+        <div class="client-h text-3xl sm:text-4xl flex justify-center pt-2">
           <h1 class="font-heading mb-4 font-bold tracking-tight">
             Happy Clients
           </h1>
         </div>
-
-        <div class="comments items-center grid grid-cols-2 gap-10 p-10 m-14">
-          <div class="evi1 bg-gray-200 p-4 pb-8 rounded-md">
-            <div><i class="fa fa-quote-left" aria-hidden="true"></i></div>
-            <p>
-              A small river named Duden flows by their place and supplies it
-              with the necessary regelialia. It is a paradisematic country, in
-              which roasted parts of sentences fly into your mouth.
+    
+        <!-- Testimonials Grid -->
+        <div class="comments grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10 p-4 sm:p-10 mx-auto max-w-7xl">
+          <!-- Testimonial 1 -->
+          <div class="evi1 bg-gray-200 p-4 sm:p-6 rounded-md shadow-md">
+            <div><i class="fa fa-quote-left text-2xl text-gray-500"></i></div>
+            <p class="text-gray-700 mt-2">
+              Patricia is a skilled and dedicated Junior Web Developer who
+              delivered a seamless backend with efficient API integration and
+              database management, ensuring our project’s success.
             </p>
-            <div class="profile flex flex-row">
+            <div class="profile flex items-center mt-4">
               <div class="image1 p-2">
-                <img
-                  src="./images/lady1.avif"
-                  alt=""
-                  class="size-10 rounded-full"
-                />
+                <img src="./images/lady1.avif" alt="" class="w-10 h-10 rounded-full">
               </div>
-              <div class="p-text">
-                <h1>Emily Blankson</h1>
-                <p>Creative Director</p>
+              <div class="p-text ml-2">
+                <h1 class="font-bold">Emily Blankson</h1>
+                <p class="text-sm text-gray-600">Creative Director</p>
               </div>
             </div>
           </div>
-
-          <div class="evi2 bg-gray-200 p-4 pb-8 rounded-md">
-            <div><i class="fa fa-quote-left" aria-hidden="true"></i></div>
-            <p>
-              A small river named Duden flows by their place and supplies it
-              with the necessary regelialia. It is a paradisematic country, in
-              which roasted parts of sentences fly into your mouth.
+    
+          <!-- Testimonial 2 -->
+          <div class="evi2 bg-gray-200 p-4 sm:p-6 rounded-md shadow-md">
+            <div><i class="fa fa-quote-left text-2xl text-gray-500"></i></div>
+            <p class="text-gray-700 mt-2">
+              Working with Patricia was an amazing experience! The e-commerce website she designed for Shearla was not only visually stunning but also highly functional and user-friendly.
             </p>
-            <div class="profile flex flex-row">
-              <div class="image2">
-                <img
-                  src="./images/lady1.avif"
-                  alt=""
-                  class="size-10 rounded-full"
-                />
+            <div class="profile flex items-center mt-4">
+              <div class="image2 p-2">
+                <img src="./images/black-woman.jpg" alt="" class="w-10 h-10 rounded-full">
               </div>
-              <div class="p-text">
-                <h1>Emily Blankson</h1>
-                <p>Creative Director</p>
+              <div class="p-text ml-2">
+                <h1 class="font-bold">Pearl Mankata</h1>
+                <p class="text-sm text-gray-600">Online Boutique Owner</p>
               </div>
             </div>
           </div>
-
-          <div class="evi3 bg-gray-200 p-4 pb-8 rounded-md">
-            <div><i class="fa fa-quote-left" aria-hidden="true"></i></div>
-            <p>
-              A small river named Duden flows by their place and supplies it
-              with the necessary regelialia. It is a paradisematic country, in
-              which roasted parts of sentences fly into your mouth.
+    
+          <!-- Testimonial 3 -->
+          <div class="evi3 bg-gray-200 p-4 sm:p-6 rounded-md shadow-md">
+            <div><i class="fa fa-quote-left text-2xl text-gray-500"></i></div>
+            <p class="text-gray-700 mt-2">
+              Patricia completely transformed my brand with her exceptional design skills! From a sleek website to eye-catching visuals, everything was crafted with creativity and precision.
             </p>
-            <div class="profile flex flex-row">
-              <div class="image3">
-                <img
-                  src="./images/lady1.avif"
-                  alt=""
-                  class="size-10 rounded-full"
-                />
+            <div class="profile flex items-center mt-4">
+              <div class="image3 p-2">
+                <img src="./images/busman.jpg" alt="" class="w-10 h-10 rounded-full">
               </div>
-              <div class="p-text">
-                <h1>Emily Blankson</h1>
-                <p>Creative Director</p>
+              <div class="p-text ml-2">
+                <h1 class="font-bold">Jean-Paul B</h1>
+                <p class="text-sm text-gray-600">Startup Founder</p>
               </div>
             </div>
           </div>
-
-          <div class="evi4 bg-gray-200 p-4 pb-8 rounded-md">
-            <div><i class="fa fa-quote-left" aria-hidden="true"></i></div>
-            <p>
-              A small river named Duden flows by their place and supplies it
-              with the necessary regelialia. It is a paradisematic country, in
-              which roasted parts of sentences fly into your mouth.
+    
+          <!-- Testimonial 4 -->
+          <div class="evi4 bg-gray-200 p-4 sm:p-6 rounded-md shadow-md">
+            <div><i class="fa fa-quote-left text-2xl text-gray-500"></i></div>
+            <p class="text-gray-700 mt-2">
+              Patricia brought my vision to life with a stunning e-commerce design that perfectly reflects my brand. The website is not only beautiful but also intuitive and easy to navigate.
             </p>
-            <div class="profile flex flex-row">
-              <div class="image4">
-                <img
-                  src="./images/lady1.avif"
-                  alt=""
-                  class="size-10 rounded-full"
-                />
+            <div class="profile flex items-center mt-4">
+              <div class="image4 p-2">
+                <img src="./images/woman.jpg" alt="" class="w-10 h-10 rounded-full">
               </div>
-              <div class="p-text">
-                <h1>Emily Blankson</h1>
-                <p>Creative Director</p>
+              <div class="p-text ml-2">
+                <h1 class="font-bold">Sophia M</h1>
+                <p class="text-sm text-gray-600">Handmade Jewelry Store Owner</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
 
     <section class="contact-info bg-gray-100" id="contact">
       <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
@@ -714,7 +1077,7 @@
               Get in Touch
             </h2>
             <p class="mx-auto mt-4 max-w-3xl text-xl text-black">
-              In hac habitasse platea dictumst
+              Let's bring your visions to life!
             </p>
           </div>
         </div>
@@ -722,9 +1085,7 @@
           <div class="grid md:grid-cols-2">
             <div class="h-full pr-6">
               <p class="mt-3 mb-12 text-lg text-black">
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut
-                scelerisque sagittis ante, ac tincidunt sem venenatis ut.
+                Have a project in mind or need a skilled backend developer to bring your ideas to life? I’d love to collaborate with you! Whether it’s crafting powerful APIs, optimizing databases, or building seamless web applications, I’m here to help. Feel free to reach out—I’m just a message away!
               </p>
               <ul class="mb-6 md:mb-0">
                 <li class="flex">
@@ -886,58 +1247,104 @@
   </body>
 
   <footer>
-    
-      
-
-    <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div
+      class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+    >
       <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div class="sm:col-span-2">
-          <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-            <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+          <a
+            href="/"
+            aria-label="Go home"
+            title="Company"
+            class="inline-flex items-center"
+          >
+            <svg
+              class="w-8 text-deep-purple-accent-400"
+              viewBox="0 0 24 24"
+              stroke-linejoin="round"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke="currentColor"
+              fill="none"
+            >
               <rect x="3" y="1" width="7" height="12"></rect>
               <rect x="3" y="17" width="7" height="6"></rect>
               <rect x="14" y="1" width="7" height="6"></rect>
               <rect x="14" y="11" width="7" height="12"></rect>
             </svg>
-            <span class="ml-2 text-4xl font-bold tracking-wide text-gray-800 uppercase"> PN </span>
+            <span
+              class="ml-2 text-4xl font-bold tracking-wide text-gray-800 uppercase"
+            >
+              PN
+            </span>
           </a>
           <div class="mt-6 lg:max-w-sm">
             <p class="text-sm text-gray-800">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+              Dream it, build it, and bring your ideas to life. 
             </p>
             <p class="mt-4 text-sm text-gray-800">
-              Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              Every great creation starts with a single line of code.
             </p>
           </div>
         </div>
         <div class="space-y-2 text-sm">
-          <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
+          <p class="text-base font-bold tracking-wide text-gray-900">
+            Contacts
+          </p>
           <div class="flex">
             <p class="mr-1 text-gray-800">Phone:</p>
-            <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">+233 552452141 </a>
+            <a
+              href="tel:850-123-5021"
+              aria-label="Our phone"
+              title="Our phone"
+              class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >+233 552452141
+            </a>
           </div>
           <div class="flex">
             <p class="mr-1 text-gray-800">Email:</p>
-            <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">patriciaakweleyn@gmail.com </a>
+            <a
+              href="mailto:info@lorem.mail"
+              aria-label="Our email"
+              title="Our email"
+              class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >patriciaakweleyn@gmail.com
+            </a>
           </div>
           <div class="flex">
             <p class="mr-1 text-gray-800">Address:</p>
-            <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address" title="Our address" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+            <a
+              href="https://www.google.com/maps"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Our address"
+              title="Our address"
+              class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
               R5 Manet Cottage Estate, SKDTD 4162, Baatsona Spintex.
             </a>
           </div>
         </div>
         <div>
-          <span class="text-base font-bold tracking-wide text-gray-900">Social</span>
+          <span class="text-base font-bold tracking-wide text-gray-900"
+            >Social</span
+          >
           <div class="flex items-center mt-1 space-x-3">
-            <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+            <a
+              href="/"
+              class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+            >
               <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
                 <path
                   d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
                 ></path>
               </svg>
             </a>
-            <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+            <a
+              href="/"
+              class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+            >
               <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
                 <circle cx="15" cy="15" r="4"></circle>
                 <path
@@ -945,7 +1352,10 @@
                 ></path>
               </svg>
             </a>
-            <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+            <a
+              href="/"
+              class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+            >
               <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
                 <path
                   d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
@@ -954,27 +1364,42 @@
             </a>
           </div>
           <p class="mt-4 text-sm text-gray-500">
-            Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
+            Thank you for visiting! Keep creating, keep innovating, and let’s build something amazing together. See you again soon!
           </p>
         </div>
       </div>
-      <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+      <div
+        class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row"
+      >
         <p class="text-sm text-gray-600">
-          © Copyright 2025 Designed by Patricia Akweley Narh  All rights reserved.
+          © 2025 Patricia Akweley Narh | Designed with passion. All rights reserved.
         </p>
-        <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+        <ul
+          class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
+        >
           <li>
-            <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">F.A.Q</a>
+            <a
+              href="/"
+              class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              >F.A.Q</a
+            >
           </li>
           <li>
-            <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy Policy</a>
+            <a
+              href="/"
+              class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              >Privacy Policy</a
+            >
           </li>
           <li>
-            <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms &amp; Conditions</a>
+            <a
+              href="/"
+              class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              >Terms &amp; Conditions</a
+            >
           </li>
         </ul>
       </div>
     </div>
-
   </footer>
 </html>
